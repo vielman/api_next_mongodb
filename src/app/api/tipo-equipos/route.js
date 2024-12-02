@@ -11,6 +11,7 @@ export async function GET() {
 export async function POST(request) {
     try {
         const data = await request.json()
+        console.log(data)
         const newTipo = new TipoEquipo(data)
         const savedTipo = await newTipo.save()
         return NextResponse.json(savedTipo)
@@ -19,6 +20,4 @@ export async function POST(request) {
             status: 400
         })
     }
-
-    
 }
