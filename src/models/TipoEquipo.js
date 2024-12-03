@@ -6,14 +6,6 @@ const TipoEquipoSchema = new Schema({
         require: [true, 'El nombre es requerido'],
         trim:true,
     },
-    fechaactivacion: {
-        type:Date,
-        require: [true, 'la fecha es requerida'],
-        trim:true,
-    },
-    fechadesactivacion: {
-        type:Date,
-    },
     username: {
         type:String,
         require: [true, 'El usuario es requerido'],
